@@ -19,6 +19,3 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
-
-# markdown files
-*.md
