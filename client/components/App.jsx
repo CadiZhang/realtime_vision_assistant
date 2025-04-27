@@ -143,14 +143,14 @@ export default function App() {
       console.log("📷 Setting image analysis loading state");
       
       // Call the server endpoint to capture an image from the ESP32 camera
-      console.log("📤 Sending request to /capture-image endpoint with camera URL:", 'http://192.168.1.6:81/stream');
+      console.log("📤 Sending request to /capture-image endpoint with camera URL:", 'http://192.168.137.99:81/stream');
       const response = await fetch('/capture-image', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          cameraUrl: 'http://192.168.1.6:81/stream',
+          cameraUrl: 'http://192.168.137.99:81/stream',
           prompt: params.prompt || "What's in this image?"
         }),
       });
